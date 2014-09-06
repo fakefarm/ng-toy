@@ -30,7 +30,7 @@ app.config([ '$routeProvider', function($routeProvider){
   $routeProvider.
     when('/', {
       controller: 'homeController',
-      template: 'BAM!'
+      templateUrl: 'home.html'
     }).
     when('/wife', {
       templateUrl: 'wife.html',

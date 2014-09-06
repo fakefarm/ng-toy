@@ -1,5 +1,6 @@
 - navigate to a picture.
 - add text to a form
+- add a text area to enter the visitors name, and store it on ng-cookies
 - use a service
 - write a custom directive
-- get a movie from youtube api
+- get a movie from youtube api and post it.
