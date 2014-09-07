@@ -1,1 +1,9 @@
 <h1>Welcome to my Angular site.</h1>
+<h2>Please fill out your name so we don't have to act like strangers.</h2>
+<div>
+  <form ng-submit="submit()" ng-controller='homeController'>
+    <input type='text' name='name' ng-model='user.name'>
+    <h1>{{ user.name }}</h1>
+    <input type='submit' value='share name'>
+  </form>
+</div>

@@ -1,7 +1,14 @@
+'use strict';
+
 var app = angular.module('bio', ['ngRoute']);
 
-app.controller('homeController', function($scope, five, about){
-
+app.controller('homeController',function($scope) {
+      console.log('home ctrl has loaded...')
+      $scope.user = {};
+      $scope.submit = function() {
+        console.log('made it.');
+        console.log($scope.user);
+      }
 });
 
 app.controller('wifeController', function($scope){
