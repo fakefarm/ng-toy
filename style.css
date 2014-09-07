@@ -15,6 +15,16 @@ ul {
 li { display: inline-block; }
 li a { display: inline-block; }
 
+a {
+  color: #ba4949;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+a:hover{
+  color: #c1747d;
+}
+
 /* wife
 -----------------*/
 .wife-photos{

@@ -2,12 +2,15 @@
 
 var app = angular.module('bio', ['ngRoute']);
 
-app.controller('homeController',function($scope) {
+app.controller('homeController', function($scope) {
       console.log('home ctrl has loaded...')
       $scope.user = {};
       $scope.submit = function() {
-        console.log('made it.');
-        console.log($scope.user);
+        $scope.user.button = true;
+        console.log($scope.button);
+      }
+      $scope.hideLip = function() {
+        $scope.user.button = false;
       }
 });
 
@@ -29,7 +32,7 @@ app.value('five', 5);
 
 app.service('about', function(){
   return {
-    blurb: 'this is bio and I know that a service is probably a bit much.'
+    blurb: 'This about was generated from a Service.'
   }
 });
 
